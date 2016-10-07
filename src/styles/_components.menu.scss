@@ -1,0 +1,57 @@
+
+
+.site-branding {
+	font-size: 1rem;
+	align-items: center;
+	max-height: 100%;
+
+	@include xs {
+		font-size: 3vw;
+	}
+}
+
+.site-title {
+	font-size: 2em;
+}
+
+.site-description {
+	font-size: 1.5em;
+}
+
+.custom-logo {
+	max-height: 4.5em;
+	width: auto;
+}
+
+.site-header {
+	height: 3.5rem;
+
+	@include md {
+		height: 4rem;
+	}
+}
+
+.home .site-header.is-top {
+	height: 4rem;
+
+	@include md {
+		height: 5.5rem;
+	}
+}
+
+.site-header:not(.is-top),
+body:not(.home) {
+	.site-description {
+		height: 0;
+		opacity: 0;
+		overflow: hidden;
+	}
+
+	.site-branding {
+		font-size: 0.8rem;
+
+		@include xs {
+			font-size: 3vw;
+		}
+	}
+}

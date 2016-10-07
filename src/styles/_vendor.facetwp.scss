@@ -1,0 +1,40 @@
+.facetwp-facet {
+	.location-wrap,
+	.facetwp-search-wrap {
+		display: inline-block;
+	}
+
+	i.facetwp-btn::before,
+	i.locate-me::before {
+		height: 2.5rem;
+		background-position: 50%;
+	}
+
+	.locate-me {
+		right: 0;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+}
+
+span.facetwp-counter {
+	display: none;
+}
+
+#page .facetwp-facet:not(.facetwp-type-alpha) {
+	margin-bottom: 2rem;
+	min-width: 50px;
+	min-height: 50px;
+}
+
+.facetwp-type-checkboxes {
+	margin-bottom: 1rem !important;
+}
+
+.facetwp-checkbox {
+	display: inline-block;
+}
+
+.facetwp-checkbox.checked {
+	font-weight: bold;
+}
