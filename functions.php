@@ -23,14 +23,14 @@ require get_stylesheet_directory() . '/inc/custom-background.php';
 add_action( 'after_setup_theme', 'rcdoc_setup' );
 add_action( 'widgets_init', 'doc_widgets_init' );
 add_action( 'wp_enqueue_scripts', 'rcdoc_scripts' );
-add_action( 'wp_head', 'abe_display_font' );
+//add_action( 'wp_head', 'stmark_display_font' );
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
 function rcdoc_setup() {
 
-	add_theme_support( 'arch-builder' );
+	//add_theme_support( 'arch-builder' );
 
 	add_theme_support( 'cleaner-gallery' );
 
@@ -65,13 +65,7 @@ function rcdoc_scripts() {
 	wp_enqueue_style( 'oldie_child', trailingslashit( get_stylesheet_directory_uri() ) . "css/oldie{$suffix}.css", array( 'hybrid-parent', 'hybrid-style', 'oldie' ) );
 	wp_style_add_data( 'oldie_child', 'conditional', 'IE' );
 
-	wp_enqueue_style( 'rcdoc_google_font', 'https://fonts.googleapis.com/css?family=Cormorant+Upright:400,500,600,700|Roboto:300,400,500,700' );
-
-	wp_register_script(
-		'arch-tabs',
-		trailingslashit( get_stylesheet_directory_uri() ) . 'js/vendors/arch-tabs.js',
-		false, false, true
-	);
+	// wp_enqueue_style( 'rcdoc_google_font', 'https://fonts.googleapis.com/css?family=Cormorant+Upright:400,500,600,700|Roboto:300,400,500,700' );
 
 	wp_register_script(
 		'flickity',
@@ -79,12 +73,12 @@ function rcdoc_scripts() {
 		false, false, true
 	);
 
-	wp_enqueue_script(
-		'font_face',
-		trailingslashit( get_stylesheet_directory_uri() ) . 'js/vendors/fontfaceobserver.js',
-		false, false, true
-	);
-	wp_add_inline_script( 'font_face', 'var fontA = new FontFaceObserver("Cormorant Upright", {weight: 500});var fontB = new FontFaceObserver("Roboto");fontA.load().then(function () {document.documentElement.className += " fontA";});fontB.load().then(function () {document.documentElement.className += " fontB";});' );
+	// wp_enqueue_script(
+	// 	'font_face',
+	// 	trailingslashit( get_stylesheet_directory_uri() ) . 'js/vendors/fontfaceobserver.js',
+	// 	false, false, true
+	// );
+	// wp_add_inline_script( 'font_face', 'var fontA = new FontFaceObserver("Cormorant Upright", {weight: 500});var fontB = new FontFaceObserver("Roboto");fontA.load().then(function () {document.documentElement.className += " fontA";});fontB.load().then(function () {document.documentElement.className += " fontB";});' );
 
 	wp_enqueue_script(
 		'main_scripts',
@@ -93,24 +87,24 @@ function rcdoc_scripts() {
 	);
 }
 
-function abe_display_font() {
+function stmark_display_font() {
 	$font_dir = trailingslashit( get_stylesheet_directory_uri() ) . 'fonts/'; ?>
 
-	<link rel="preload" href="<?= $font_dir ?>cormorantupright-medium-webfont.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="<?= $font_dir ?>roboto-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="<?php echo $font_dir ?>cormorantupright-medium-webfont.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="<?php echo $font_dir ?>roboto-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
 
 	<style type="text/css">
 		@font-face {
 			font-family: 'CormorantFB';
 			font-style: normal;
 			font-weight: 500;
-			src:url('<?= $font_dir ?>cormorantupright-medium-webfont.woff2') format('woff2'),
-				url('<?= $font_dir ?>cormorantupright-medium-webfont.woff') format('woff');
+			src:url('<?php echo $font_dir ?>cormorantupright-medium-webfont.woff2') format('woff2'),
+				url('<?php echo $font_dir ?>cormorantupright-medium-webfont.woff') format('woff');
 		}
 		@font-face {
 		    font-family: 'RobotoFB';
-		    src: url('<?= $font_dir ?>roboto-regular-webfont.woff2') format('woff2'),
-		         url('<?= $font_dir ?>roboto-regular-webfont.woff') format('woff');
+		    src: url('<?php echo $font_dir ?>roboto-regular-webfont.woff2') format('woff2'),
+		         url('<?php echo $font_dir ?>roboto-regular-webfont.woff') format('woff');
 		    font-weight: 400;
 		    font-style: normal;
 

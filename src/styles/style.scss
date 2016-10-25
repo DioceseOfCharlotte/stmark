@@ -1,6 +1,6 @@
 /*
-Theme Name: RCDOC
-Theme URI: https://github.com/DioceseOfCharlotte/rcdoc
+Theme Name: St Mark
+Theme URI: https://github.com/DioceseOfCharlotte/stmark
 Author: Marty Helmick
 Author URI: https://github.com/m-e-h
 Description: Diocese child theme for Abraham.
@@ -31,8 +31,8 @@ html {
 	@import "vendor.facetwp";
 	@import "vendor.flickity";
 	@import "vendor.gravity";
-	@import "vendor.arch";
-	@import "shame";
+	// @import "vendor.arch";
+	// @import "shame";
 }
 
 /* Styles specific to the editor. */
