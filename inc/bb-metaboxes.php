@@ -22,9 +22,6 @@ if ( ! class_exists( 'Doc_Post_Options' ) ) {
 		 */
 		public function register( $butterbean, $post_type ) {
 			$doc_po = array(
-			   'department',
-			   'parish',
-			   'school',
 			   'cpt_archive',
 		   	);
 

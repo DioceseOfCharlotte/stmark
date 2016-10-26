@@ -12,28 +12,28 @@ Text Domain: rcdoc
 GitHub Theme URI: https://github.com/DioceseOfCharlotte/rcdoc
 */
 
-@import "motion-ui";
-
-///* Variables and mixins */
-@import "settings.colors";
-@import "settings.vars";
-@import "settings.responsive";
-
-///* To be moved */
-//@import "card";
-@import "components.tiles";
-@import "components.menu";
-@import "theme.formats";
-@import "page.home";
-@import "postcss";
-
-html {
-	@import "vendor.facetwp";
-	@import "vendor.flickity";
-	@import "vendor.gravity";
-	// @import "vendor.arch";
-	// @import "shame";
-}
+// @import "motion-ui";
+//
+// ///* Variables and mixins */
+// @import "settings.colors";
+// @import "settings.vars";
+// @import "settings.responsive";
+//
+// ///* To be moved */
+// //@import "card";
+// @import "components.tiles";
+// @import "components.menu";
+// @import "theme.formats";
+// @import "page.home";
+// @import "postcss";
+//
+// html {
+// 	@import "vendor.facetwp";
+// 	@import "vendor.flickity";
+// 	@import "vendor.gravity";
+// 	// @import "vendor.arch";
+// 	// @import "shame";
+// }
 
 /* Styles specific to the editor. */
 body#tinymce {

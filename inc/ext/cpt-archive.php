@@ -40,16 +40,5 @@ function cpt_archive_labels( $args, $type ) {
 		'not_found_in_trash' => __( 'No landing pages found in Trash.', 'cpt-archives' ),
 	);
 
-	if ( 'cpt_archive' === $type ) {
-		$args['labels']   = $cpt_archive_labels;
-		$args['supports'] = array(
-			'author',
-			'thumbnail',
-			'theme-layouts',
-			'custom-header',
-		);
-		$args['taxonomies']   = array( 'agency' );
-	}
-
 	return $args;
 }
