@@ -42,7 +42,7 @@ if ( ! is_active_sidebar( 'secondary' ) ) {
 					</div>
 
 				</div>
-				<?php dynamic_sidebar( 'employee-sidebar' ); ?>
+				<?php dynamic_sidebar( 'parent-sidebar' ); ?>
 			</div>
 
 		<?php else : ?>
