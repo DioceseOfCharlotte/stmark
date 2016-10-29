@@ -39,8 +39,8 @@ function rcdoc_setup() {
  */
 function doc_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Employee Sidebar', 'doc' ),
-		'id'            => 'employee-sidebar',
+		'name'          => esc_html__( 'Parent Sidebar', 'doc' ),
+		'id'            => 'parent-sidebar',
 		'description'   => esc_html__( 'Add widgets here.', 'doc' ),
 		'before_widget' => '<section id="%1$s" class="widget u-p2 u-mb2 u-bg-frost-1 u-br %2$s">',
 		'after_widget'  => '</section>',
@@ -60,7 +60,7 @@ function rcdoc_scripts() {
 	wp_style_add_data( 'oldie_child', 'conditional', 'IE' );
 
 	// wp_enqueue_style( 'rcdoc_google_font', 'https://fonts.googleapis.com/css?family=Cormorant+Upright:400,500,600,700|Roboto:300,400,500,700' );
-
+	wp_enqueue_style( 'material_icons', 'https://fonts.googleapis.com/icon?family=Material+Icons' );
 	// wp_register_script(
 	// 	'flickity',
 	// 	trailingslashit( get_stylesheet_directory_uri() ) . 'js/vendors/flickity.pkgd.min.js',
