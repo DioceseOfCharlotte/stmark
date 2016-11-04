@@ -26,7 +26,7 @@ add_action( 'wp_enqueue_scripts', 'rcdoc_scripts' );
  */
 function rcdoc_setup() {
 
-	add_theme_support( 'cleaner-gallery' );
+	//add_theme_support( 'cleaner-gallery' );
 
 	add_theme_support( 'custom-background',	array( 'default-color' => 'f5f5f5' ) );
 

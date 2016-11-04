@@ -7,12 +7,12 @@
 
 
 add_filter( 'script_loader_tag', 'abe_defer_scripts', 10, 3 );
-add_filter( 'cleaner_gallery_defaults', 'meh_gallery_default_args' );
+//add_filter( 'cleaner_gallery_defaults', 'meh_gallery_default_args' );
 
-function meh_gallery_default_args( $defaults ) {
-	$defaults['size']    = 'abe-hd';
-	return $defaults;
-}
+// function meh_gallery_default_args( $defaults ) {
+// 	$defaults['size']    = 'abe-hd';
+// 	return $defaults;
+// }
 
 function abe_defer_scripts( $tag, $handle, $src ) {
 
