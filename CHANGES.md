@@ -1,3 +1,7 @@
+#### 1.2.0 / 2017-09-19
+* add some dev tools.
+* add some styles for our form pages.
+
 #### 1.1.0 / 2017-09-17
 * add `smcs-form.php` page-template for basic form pages.
 
