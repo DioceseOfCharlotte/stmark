@@ -1,0 +1,56 @@
+{
+  "name": "Abraham",
+  "version": "1.0.0",
+  "description": "Starter Theme focused on OOCSS and such.",
+  "repository": "https://github.com/m-e-h/abraham",
+  "private": true,
+  "license": "GNU General Public License v2 or later",
+  "scripts": {
+    "dist": "npm run build && npm run minify",
+    "build": "postcss src/styles/index.css > css/sm-forms.css && npm run prefix && npm run format",
+    "prefix": "postcss css/sm-forms.css -u autoprefixer -o css/sm-forms.css --no-map",
+    "minify": "postcss css/sm-forms.css -u cssnano -o css/sm-forms.min.css --no-map",
+    "lint": "stylelint css/sm-forms.css",
+    "fix": "stylelint css/sm-forms.css --fix",
+    "format": "stylefmt css/sm-forms.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "browserslist": "^2.4.0",
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^4.1.1",
+    "postcss-color-function": "^4.0.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-discard-empty": "^2.1.0",
+    "postcss-import": "^11.0.0",
+    "postcss-increase-specificity": "^0.5.0",
+    "postcss-mixins": "^6.1.0",
+    "postcss-nested": "^2.1.2",
+    "postcss-plugin-context": "^2.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "postcss-strip-units": "^1.2.0",
+    "stylefmt": "^6.0.0",
+    "stylelint": "^8.1.1",
+    "stylelint-config-standard": "^17.0.0"
+  },
+  "stylelint": {
+    "defaultSeverity": "warning",
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "indentation": "tab"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "ie >= 11",
+    "last 1 Android versions",
+    "last 1 ChromeAndroid versions",
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions",
+    "last 2 Opera versions"
+  ]
+}
