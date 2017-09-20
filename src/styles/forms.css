@@ -59,11 +59,6 @@
 		-webkit-appearance: listbox;
 	}
 
-	textarea {
-		overflow: auto;
-		resize: vertical;
-	}
-
 	fieldset {
 		min-width: 0;
 		padding: 0;
@@ -144,6 +139,24 @@
 	textarea {
 		height: 100%;
 		min-height: 2.5rem;
+		max-width: 100%;
+		border-radius: 2px;
+		padding: 0.5em 0.625em;
+		line-height: 1.5;
+		color: inherit;
+		vertical-align: baseline;
+		font-size: inherit;
+		font-family: inherit;
+		font-style: inherit;
+		font-weight: inherit;
+		background-color: #fcfcfc;
+	}
+
+	textarea {
+		overflow: auto;
+		resize: vertical;
+		width: 100%;
+		min-height: 100px;
 	}
 
 	button,
@@ -190,4 +203,44 @@
 		transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 	}
 
+	.rcp_form p {
+		margin-bottom: 1rem;
+	}
+
+	pre {
+		font-family: inherit;
+		margin: 0;
+		padding: 0;
+		display: block;
+		position: relative;
+		font-size: 1rem;
+		line-height: 1.6;
+		white-space: normal;
+	}
+}
+/* #content*/
+
+/* GF Address */
+@media (--md) {
+	.address_city {
+		width: 100%;
+		max-width: calc(50% - 8px);
+		margin: 0 8px 0 0 !important;
+	}
+
+	.address_state {
+		width: 100%;
+		max-width: calc(30% - 8px);
+		margin: 0 8px 0 0 !important;
+	}
+
+	.address_zip {
+		width: 100%;
+		max-width: calc(20% - 8px);
+		margin: 0 !important;
+	}
+}
+
+#rcpga-group-member-login-wrap {
+	display: none;
 }

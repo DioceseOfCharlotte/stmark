@@ -9,18 +9,19 @@
 
 	table th,
 	table td {
+		font-size: 1rem;
 		padding: 0.75rem;
 		vertical-align: top;
-		border-top: 1px solid #e9ecef;
+		border-top: 1px solid rgba(51, 51, 51, 0.3);
 	}
 
 	table thead th {
 		vertical-align: bottom;
-		border-bottom: 2px solid #e9ecef;
+		border-bottom: 2px solid rgba(51, 51, 51, 0.3);
 	}
 
 	table tbody + tbody {
-		border-top: 2px solid #e9ecef;
+		border-top: 2px solid rgba(51, 51, 51, 0.3);
 	}
 
 	table table {

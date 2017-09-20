@@ -8,18 +8,19 @@
 
 #content table th,
 #content table td {
+	font-size: 1rem;
 	padding: 0.75rem;
 	vertical-align: top;
-	border-top: 1px solid #e9ecef;
+	border-top: 1px solid rgba(51, 51, 51, 0.3);
 }
 
 #content table thead th {
 	vertical-align: bottom;
-	border-bottom: 2px solid #e9ecef;
+	border-bottom: 2px solid rgba(51, 51, 51, 0.3);
 }
 
 #content table tbody + tbody {
-	border-top: 2px solid #e9ecef;
+	border-top: 2px solid rgba(51, 51, 51, 0.3);
 }
 
 #content table table {
@@ -84,11 +85,6 @@
 #content input[type="datetime-local"],
 #content input[type="month"] {
 	-webkit-appearance: listbox;
-}
-
-#content textarea {
-	overflow: auto;
-	resize: vertical;
 }
 
 #content fieldset {
@@ -171,6 +167,24 @@
 #content textarea {
 	height: 100%;
 	min-height: 2.5rem;
+	max-width: 100%;
+	border-radius: 2px;
+	padding: 0.5em 0.625em;
+	line-height: 1.5;
+	color: inherit;
+	vertical-align: baseline;
+	font-size: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	background-color: #fcfcfc;
+}
+
+#content textarea {
+	overflow: auto;
+	resize: vertical;
+	width: 100%;
+	min-height: 100px;
 }
 
 #content button,
@@ -217,6 +231,45 @@
 	transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+#content .rcp_form p {
+	margin-bottom: 1rem;
+}
+
+#content pre {
+	font-family: inherit;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: relative;
+	font-size: 1rem;
+	line-height: 1.6;
+	white-space: normal;
+}
+
+@media (min-width: 40rem) {
+	.address_city {
+		width: 100%;
+		max-width: calc(50% - 8px);
+		margin: 0 8px 0 0 !important;
+	}
+
+	.address_state {
+		width: 100%;
+		max-width: calc(30% - 8px);
+		margin: 0 8px 0 0 !important;
+	}
+
+	.address_zip {
+		width: 100%;
+		max-width: calc(20% - 8px);
+		margin: 0 !important;
+	}
+}
+
+#rcpga-group-member-login-wrap {
+	display: none;
+}
+
 #content h1,
 #content h2,
 #content h3,
@@ -234,6 +287,7 @@
 	font-weight: 500;
 	line-height: 1.1;
 	color: inherit;
+	text-shadow: none;
 }
 
 #content h1,
@@ -271,4 +325,5 @@ article {
 	margin-top: 2.5rem;
 	padding: 1.5rem;
 	border-radius: 2px;
+	font-size: 1rem;
 }
