@@ -1,3 +1,7 @@
+#### 1.3.0 / 2017-09-20
+* add RCP templates.
+* fix form styles.
+
 #### 1.2.0 / 2017-09-19
 * add some dev tools.
 * add some styles for our form pages.
