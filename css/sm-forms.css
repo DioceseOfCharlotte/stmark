@@ -1,3 +1,16 @@
+article {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
+	margin-top: 2.5rem;
+	padding: 1.5rem;
+	border-radius: 2px;
+	font-size: 1rem;
+}
+
+.smcs-form {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
+	padding: 1.5rem 0;
+}
+
 #content table {
 	border-collapse: collapse;
 	width: 100%;
@@ -270,6 +283,10 @@
 	display: none;
 }
 
+.gravityview-template-smcs-form #main > .fusion-row {
+	max-width: 100%;
+}
+
 #content h1,
 #content h2,
 #content h3,
@@ -317,13 +334,5 @@
 
 #content h6,
 #content .h6 {
-	font-size: 1rem;
-}
-
-article {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
-	margin-top: 2.5rem;
-	padding: 1.5rem;
-	border-radius: 2px;
 	font-size: 1rem;
 }

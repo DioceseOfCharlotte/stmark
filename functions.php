@@ -14,7 +14,7 @@ function stmark_styles() {
 
 	wp_register_style( 'sm-form-styles', get_theme_file_uri( "css/sm-forms{$suffix}.css" ), array( 'child-styles' ) );
 
-	if ( is_singular( array( 'registration_pages', 'smcs_athletics' ) ) ) {
+	if ( is_singular( array( 'registration_pages', 'smcs_athletics', 'gravityview' ) ) ) {
 		wp_enqueue_style( 'sm-form-styles' );
 	}
 }

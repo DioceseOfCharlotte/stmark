@@ -244,3 +244,7 @@
 #rcpga-group-member-login-wrap {
 	display: none;
 }
+
+.gravityview-template-smcs-form #main > .fusion-row {
+	max-width: 100%;
+}
