@@ -17,7 +17,7 @@ GitHub Theme URI: https://github.com/DioceseOfCharlotte/stmark
 }
 
 .u-text-bold {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .gv-list-view-content .gv-list-view-content-image {
@@ -65,13 +65,13 @@ ul.gravityview-az-filter {
 }
 
 .badge {
-		border-radius: 50%;
-    background-color: #eee;
-    width: 2.5em;
-    height: 2.5em;
-    text-align: center;
-    font-weight: bold;
-    line-height: 2.5;
+	border-radius: 50%;
+	background-color: #eee;
+	width: 2.5em;
+	height: 2.5em;
+	text-align: center;
+	font-weight: bold;
+	line-height: 2.5;
 }
 
 .grade-badge {
@@ -83,23 +83,23 @@ ul.gravityview-az-filter {
 }
 
 .home-event-image > .wp-post-image {
-    object-fit: cover;
-    height: 100%;
-    width: auto;
+	object-fit: cover;
+	height: 100%;
+	width: auto;
 }
 
 .home-event-image {
-    height: 216px;
+	height: 216px;
 }
 
 .sc_events_list {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-		margin: 0;
-		padding: 0;
-		list-style: none;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .sc_events_list .sc_event {
@@ -121,9 +121,8 @@ ul.gravityview-az-filter {
 }
 
 table th {
-	background-color: transparent!important;
+	background-color: transparent !important;
 }
-
 
 .single-registration_pages #content label {
 	font-family: inherit;
@@ -134,8 +133,10 @@ table th {
 	display: none;
 }
 
-.gform_wrapper .gfield_checkbox li input, .gform_wrapper .gfield_checkbox li input[type=checkbox], .gform_wrapper .gfield_radio li input[type=radio] {
-	vertical-align: top!important;
+.gform_wrapper .gfield_checkbox li input,
+.gform_wrapper .gfield_checkbox li input[type=checkbox],
+.gform_wrapper .gfield_radio li input[type=radio] {
+	vertical-align: top !important;
 }
 
 .gravityview .post-content .fa {
@@ -155,84 +156,78 @@ body:not(.logged-in) .loginout {
 	font: inherit;
 }
 
-.gfield.fa >
-label:before {
+.gfield.fa > label::before {
 	display: inline-block;
 	font-family: FontAwesome;
 	font-size: 1.1rem;
-	opacity: .8;
-	margin-right: .4rem;
+	opacity: 0.8;
+	margin-right: 0.4rem;
 	font-weight: normal;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.gfield.fa-user > label:before {
+.gfield.fa-user > label::before {
 	content: "\f007";
 }
 
-.gfield.fa-mobile > label:before {
+.gfield.fa-mobile > label::before {
 	content: "\f10b";
 }
 
-.gfield.fa-phone > label:before {
+.gfield.fa-phone > label::before {
 	content: "\f095";
 }
 
-
-.gfield.fa-home > label:before {
+.gfield.fa-home > label::before {
 	content: "\f015";
 }
 
-
-.gfield.fa-envelope > label:before {
+.gfield.fa-envelope > label::before {
 	content: "\f0e0";
 }
 
-
-.gfield.fa-graduation-cap > label:before {
+.gfield.fa-graduation-cap > label::before {
 	content: "\f19d";
 }
 
-
-.gfield.fa-id-card > label:before {
+.gfield.fa-id-card > label::before {
 	content: "\f2c2";
 }
 
-
-.gfield.fa-file-text > label:before {
+.gfield.fa-file-text > label::before {
 	content: "\f15c";
 }
 
-
-.gfield.fa-clipboard > label:before {
+.gfield.fa-clipboard > label::before {
 	content: "\f0ea";
 }
 
-.gfield.fa-users > label:before {
+.gfield.fa-users > label::before {
 	content: "\f0c0";
 }
 
-.gfield.fa-address-book > label:before {
+.gfield.fa-address-book > label::before {
 	content: "\f2b9";
 }
 
-.gfield.fa-lock > label:before {
+.gfield.fa-lock > label::before {
 	content: "\f023";
 }
 
 @media only screen and (min-width: 641px) {
-	.gfield[class*=u-1of], .gfield[class*=u-2of], .gfield[class*=u-3of] input {
+	.gfield[class*=u-1of],
+	.gfield[class*=u-2of],
+	.gfield[class*=u-3of] input {
 		width: 100% !important;
 		display: inline-block;
 		vertical-align: top;
 	}
 
 	.gfield.u-1of2 {
-	max-width: 50% !important;
+		max-width: 50% !important;
 	}
-
 }
 
 .gv-search-box-links > p {
@@ -261,16 +256,16 @@ input[type="submit"],
 	text-align: center;
 	vertical-align: middle;
 	border-radius: 2px;
-    border: none;
-    outline: none;
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-	    cursor: pointer;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	cursor: pointer;
 	color: #002c60;
 	background-color: #e7b20e;
-	background-image: linear-gradient(rgba(255,255,255,.2) 60%,rgba(255,255,255,.1),transparent);
-	transition: all .28s cubic-bezier(0.4, 0, 0.2, 1);
-	box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.2) 60%, rgba(255, 255, 255, 0.1), transparent);
+	transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
 input[type="button"]:hover,
@@ -280,11 +275,11 @@ input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus,
 .gv-search-box-links a:hover {
-	background-image: linear-gradient(rgba(255,255,255,.3) 60%,rgba(255,255,255,.2),rgba(255,255,255,.1));
+	background-image: linear-gradient(rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
 }
 
 .gv-search-box-links a.active {
-	background-image: linear-gradient(rgba(255,255,255,.7) 60%,rgba(255,255,255,.6),rgba(255,255,255,.4));
+	background-image: linear-gradient(rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
 	transform: scale(1.1);
 }
 
@@ -298,8 +293,8 @@ input[type="submit"]:focus,
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	transition: opacity .28s cubic-bezier(0.4, 0, 0.2, 1);
-	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	transition: opacity 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
 .gv-search-box-links a:hover:after,
@@ -308,10 +303,10 @@ input[type="submit"]:focus,
 }
 
 .alert {
-	padding: .75rem 1.25rem;
+	padding: 0.75rem 1.25rem;
 	margin-bottom: 1rem;
 	border: 1px solid transparent;
-	border-radius: .25rem;
+	border-radius: 0.25rem;
 }
 
 .alert-info {
