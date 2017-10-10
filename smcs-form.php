@@ -19,7 +19,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <?php get_header(); ?>
 <section id="content" class="full-width smcs-form">
-	<?php while ( have_posts() ) : the_post(); ?>
+	<?php
+	while ( have_posts() ) :
+		the_post();
+		?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php echo fusion_render_rich_snippets_for_pages(); // WPCS: XSS ok. ?>
 			<?php avada_featured_images_for_pages(); ?>
@@ -29,4 +32,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	<?php endwhile; ?>
 </section>
-<?php get_footer();
+<?php
+get_footer();
