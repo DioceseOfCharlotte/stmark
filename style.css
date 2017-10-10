@@ -4,10 +4,318 @@ Theme URI: https://github.com/DioceseOfCharlotte/stmark
 Author: Marty Helmick
 Author URI: https://github.com/m-e-h
 Description: St Mark School child theme for Avada.
-Version: 1.3.2
+Version: 1.3.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: Avada
 Text Domain: stmark
 GitHub Theme URI: https://github.com/DioceseOfCharlotte/stmark
 */
+
+.u-text-center {
+	text-align: center;
+}
+
+.u-text-bold {
+    font-weight: bold;
+}
+
+.gv-list-view-content .gv-list-view-content-image {
+	width: auto;
+}
+
+.gv-list-view-content > .gv-list-view-content-description {
+	width: 100%;
+}
+
+.gv-list-view-content-image + .gv-list-view-content-description {
+	width: 66.66666%;
+}
+
+.faculty-photo {
+	max-width: 100px;
+}
+
+.gv-list-view {
+	border: none;
+	margin-bottom: 1em;
+	width: 100%;
+	max-width: calc(50% - 1rem);
+	display: inline-block;
+	vertical-align: top;
+}
+
+.inline-edit-enable {
+	width: 100%;
+}
+
+ul.gravityview-az-filter {
+	margin: 10px 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.gv-search-box.gv-search-field-link.gv-search-box-links {
+	text-align: center;
+}
+
+.gv-featured-entry {
+	background-color: transparent;
+}
+
+.badge {
+		border-radius: 50%;
+    background-color: #eee;
+    width: 2.5em;
+    height: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2.5;
+}
+
+.grade-badge {
+	float: right;
+}
+
+.gv-no-results {
+	display: none;
+}
+
+.home-event-image > .wp-post-image {
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+}
+
+.home-event-image {
+    height: 216px;
+}
+
+.sc_events_list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+
+.sc_events_list .sc_event {
+	max-width: calc(33% - 2rem);
+	margin: 1rem;
+	width: 100%;
+	min-width: 200px;
+	display: inline-block;
+}
+
+.sc_event > *:not(div) {
+	display: block;
+	line-height: 1.6;
+	padding-left: 1rem;
+}
+
+.sc_event_title {
+	font-size: 1.3rem;
+}
+
+table th {
+	background-color: transparent!important;
+}
+
+
+.single-registration_pages #content label {
+	font-family: inherit;
+	margin-bottom: 0;
+}
+
+.logged-in:not(.is-administrator) li.public {
+	display: none;
+}
+
+.gform_wrapper .gfield_checkbox li input, .gform_wrapper .gfield_checkbox li input[type=checkbox], .gform_wrapper .gfield_radio li input[type=radio] {
+	vertical-align: top!important;
+}
+
+.gravityview .post-content .fa {
+	font: inherit;
+}
+
+.gravityview .post-content .fa::before {
+	font: normal normal normal 14px/1 FontAwesome;
+}
+
+body:not(.logged-in) .loginout {
+	display: none;
+}
+
+.gfield.fa {
+	display: inherit;
+	font: inherit;
+}
+
+.gfield.fa >
+label:before {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 1.1rem;
+	opacity: .8;
+	margin-right: .4rem;
+	font-weight: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.gfield.fa-user > label:before {
+	content: "\f007";
+}
+
+.gfield.fa-mobile > label:before {
+	content: "\f10b";
+}
+
+.gfield.fa-phone > label:before {
+	content: "\f095";
+}
+
+
+.gfield.fa-home > label:before {
+	content: "\f015";
+}
+
+
+.gfield.fa-envelope > label:before {
+	content: "\f0e0";
+}
+
+
+.gfield.fa-graduation-cap > label:before {
+	content: "\f19d";
+}
+
+
+.gfield.fa-id-card > label:before {
+	content: "\f2c2";
+}
+
+
+.gfield.fa-file-text > label:before {
+	content: "\f15c";
+}
+
+
+.gfield.fa-clipboard > label:before {
+	content: "\f0ea";
+}
+
+.gfield.fa-users > label:before {
+	content: "\f0c0";
+}
+
+.gfield.fa-address-book > label:before {
+	content: "\f2b9";
+}
+
+.gfield.fa-lock > label:before {
+	content: "\f023";
+}
+
+@media only screen and (min-width: 641px) {
+	.gfield[class*=u-1of], .gfield[class*=u-2of], .gfield[class*=u-3of] input {
+		width: 100% !important;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.gfield.u-1of2 {
+	max-width: 50% !important;
+	}
+
+}
+
+.gv-search-box-links > p {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	color: rgba(24, 50, 94, 0);
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.gv-search-box-links a {
+	font-family: inherit;
+	font-size: 0.875rem;
+	font-weight: bolder;
+	letter-spacing: 0.04em;
+	line-height: 2.25rem;
+	display: inline-block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	min-width: 88px;
+	height: 36px;
+	padding: 0 1rem;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 2px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+	    cursor: pointer;
+	color: #002c60;
+	background-color: #e7b20e;
+	background-image: linear-gradient(rgba(255,255,255,.2) 60%,rgba(255,255,255,.1),transparent);
+	transition: all .28s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+.gv-search-box-links a:hover {
+	background-image: linear-gradient(rgba(255,255,255,.3) 60%,rgba(255,255,255,.2),rgba(255,255,255,.1));
+}
+
+.gv-search-box-links a.active {
+	background-image: linear-gradient(rgba(255,255,255,.7) 60%,rgba(255,255,255,.6),rgba(255,255,255,.4));
+	transform: scale(1.1);
+}
+
+.gv-search-box-links a:after {
+	content: "";
+	border-radius: 2px;
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity .28s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.gv-search-box-links a:hover:after,
+.gv-search-box-links a.active:after {
+	opacity: 1;
+}
+
+.alert {
+	padding: .75rem 1.25rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+}
+
+.alert-info {
+	color: #002c60;
+	background-color: #e8ecf0;
+	border-color: #b0c0cd;
+}

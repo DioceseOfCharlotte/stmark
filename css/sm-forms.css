@@ -1,5 +1,6 @@
 .smcs-post {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
+	background-color: rgba(255, 255, 255, 0.8);
 	margin-top: 2.5rem;
 	padding: 1.5rem;
 	border-radius: 2px;
@@ -287,6 +288,15 @@
 
 .gravityview-template-smcs-form #main > .fusion-row {
 	max-width: 100%;
+}
+
+.gform_page_footer input[type="button"],
+.gform_page_footer input[type=button],
+.gform_wrapper .button,
+.gform_wrapper .gfield_description,
+.gform_wrapper .gform_button,
+.gform_wrapper label {
+	font-family: inherit;
 }
 
 #content h1,

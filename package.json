@@ -15,8 +15,8 @@
     "format": "stylefmt css/sm-forms.css"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "browserslist": "^2.4.0",
+    "autoprefixer": "^7.1.5",
+    "browserslist": "^2.5.1",
     "cssnano": "^3.10.0",
     "postcss-cli": "^4.1.1",
     "postcss-color-function": "^4.0.0",
@@ -24,14 +24,14 @@
     "postcss-discard-comments": "^2.0.4",
     "postcss-discard-empty": "^2.1.0",
     "postcss-import": "^11.0.0",
-    "postcss-increase-specificity": "^0.5.0",
-    "postcss-mixins": "^6.1.0",
+    "postcss-increase-specificity": "^0.6.0",
+    "postcss-mixins": "^6.1.1",
     "postcss-nested": "^2.1.2",
     "postcss-plugin-context": "^2.0.0",
     "postcss-simple-vars": "^4.1.0",
     "postcss-strip-units": "^1.2.0",
     "stylefmt": "^6.0.0",
-    "stylelint": "^8.1.1",
+    "stylelint": "^8.2.0",
     "stylelint-config-standard": "^17.0.0"
   },
   "stylelint": {

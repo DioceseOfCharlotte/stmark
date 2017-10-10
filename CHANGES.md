@@ -1,3 +1,6 @@
+#### 1.3.3 / 2017-10-10
+* migrate styles from customizer CSS.
+
 #### 1.3.2 / 2017-10-09
 * more specific styling.
 
