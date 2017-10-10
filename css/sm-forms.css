@@ -1,6 +1,6 @@
 .smcs-post {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.85);
 	margin-top: 2.5rem;
 	padding: 1.5rem;
 	border-radius: 2px;
@@ -94,6 +94,8 @@
 #content input[type="checkbox"] {
 	box-sizing: border-box;
 	padding: 0;
+	float: none;
+	vertical-align: baseline;
 }
 
 #content input[type="date"],
@@ -193,7 +195,29 @@
 	font-family: inherit;
 	font-style: inherit;
 	font-weight: inherit;
-	background-color: #fcfcfc;
+	border-color: rgba(0, 0, 0, 0.15);
+}
+
+#content button:focus,
+#content [type="button"]:focus,
+#content [type="date"]:focus,
+#content [type="datetime"]:focus,
+#content [type="datetime-local"]:focus,
+#content [type="email"]:focus,
+#content [type="month"]:focus,
+#content [type="number"]:focus,
+#content [type="password"]:focus,
+#content [type="reset"]:focus,
+#content [type="search"]:focus,
+#content [type="submit"]:focus,
+#content [type="tel"]:focus,
+#content [type="text"]:focus,
+#content [type="time"]:focus,
+#content [type="url"]:focus,
+#content [type="week"]:focus,
+#content select:focus,
+#content textarea:focus {
+	border-color: #f6efdc;
 }
 
 #content textarea {
@@ -262,6 +286,25 @@
 	white-space: normal;
 }
 
+#content .gform_wrapper * {
+	font-family: inherit;
+}
+
+#content .gform_wrapper .description,
+#content .gform_wrapper .gfield_description,
+#content .gform_wrapper .gsection_description,
+#content .gform_wrapper .instruction,
+#content .gform_wrapper .gfield_checkbox li label,
+#content .gform_wrapper .gfield_radio li label {
+	font-size: 0.9375rem;
+}
+
+#content .fa-clipboard .gfield_checkbox li input[type=checkbox] {
+	vertical-align: top;
+	margin-right: 0.25rem;
+	margin-top: 0.25rem !important;
+}
+
 @media (min-width: 40rem) {
 	.address_city {
 		width: 100%;
@@ -288,15 +331,6 @@
 
 .gravityview-template-smcs-form #main > .fusion-row {
 	max-width: 100%;
-}
-
-.gform_page_footer input[type="button"],
-.gform_page_footer input[type=button],
-.gform_wrapper .button,
-.gform_wrapper .gfield_description,
-.gform_wrapper .gform_button,
-.gform_wrapper label {
-	font-family: inherit;
 }
 
 #content h1,

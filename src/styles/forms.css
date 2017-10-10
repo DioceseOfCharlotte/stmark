@@ -50,6 +50,8 @@
 	input[type="checkbox"] {
 		box-sizing: border-box;
 		padding: 0;
+		float: none;
+		vertical-align: baseline;
 	}
 
 	input[type="date"],
@@ -149,7 +151,11 @@
 		font-family: inherit;
 		font-style: inherit;
 		font-weight: inherit;
-		background-color: #fcfcfc;
+		border-color: rgba(0, 0, 0, 0.15);
+
+		&:focus {
+			border-color: #f6efdc;
+		}
 	}
 
 	textarea {
@@ -217,6 +223,25 @@
 		line-height: 1.6;
 		white-space: normal;
 	}
+
+	.gform_wrapper * {
+		font-family: inherit;
+	}
+
+	.gform_wrapper .description,
+	.gform_wrapper .gfield_description,
+	.gform_wrapper .gsection_description,
+	.gform_wrapper .instruction,
+	.gform_wrapper .gfield_checkbox li label,
+	.gform_wrapper .gfield_radio li label {
+		font-size: 0.9375rem;
+	}
+
+	.fa-clipboard .gfield_checkbox li input[type=checkbox] {
+		vertical-align: top;
+		margin-right: 0.25rem;
+		margin-top: 0.25rem !important;
+	}
 }
 /* #content*/
 
@@ -247,13 +272,4 @@
 
 .gravityview-template-smcs-form #main > .fusion-row {
 	max-width: 100%;
-}
-
-.gform_page_footer input[type="button"],
-.gform_page_footer input[type=button],
-.gform_wrapper .button,
-.gform_wrapper .gfield_description,
-.gform_wrapper .gform_button,
-.gform_wrapper label {
-	font-family: inherit;
 }

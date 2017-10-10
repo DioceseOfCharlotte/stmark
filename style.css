@@ -36,8 +36,8 @@ GitHub Theme URI: https://github.com/DioceseOfCharlotte/stmark
 	max-width: 100px;
 }
 
-.gv-list-view {
-	border: none;
+.gv-list-view.gv-list-view {
+	border-width: 0;
 	margin-bottom: 1em;
 	width: 100%;
 	max-width: calc(50% - 1rem);
@@ -131,12 +131,6 @@ table th {
 
 .logged-in:not(.is-administrator) li.public {
 	display: none;
-}
-
-.gform_wrapper .gfield_checkbox li input,
-.gform_wrapper .gfield_checkbox li input[type=checkbox],
-.gform_wrapper .gfield_radio li input[type=radio] {
-	vertical-align: top !important;
 }
 
 .gravityview .post-content .fa {
