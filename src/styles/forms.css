@@ -165,27 +165,28 @@
 		min-height: 100px;
 	}
 
+	.gv-search-clear,
 	button,
 	input[type="button"],
 	input[type="reset"],
 	input[type="submit"] {
 		color: inherit;
 		background-color: #e7b20e;
-		transition-duration: 0.16s;
+		transition-duration: 0.2s;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-property: all;
-		padding: 0.5em 0.75em;
 		line-height: 1.5;
 		border-width: 0;
 		border-radius: 0.1rem;
-		font-size: inherit;
+		font-size: 0.9rem;
+		font-weight: 500;
+		padding: 0.75em 1.75em;
 		font-family: inherit;
 		display: inline-block;
 		margin: 0;
 		word-break: normal;
 		vertical-align: middle;
 		cursor: pointer;
-		box-shadow: none;
 	}
 
 	button:hover,
@@ -196,16 +197,27 @@
 	input[type="button"]:active,
 	input[type="button"]:focus,
 	input[type="button"].is-active,
-	input[type="reset"]:hover,
-	input[type="reset"]:active,
-	input[type="reset"]:focus,
-	input[type="reset"].is-active,
 	input[type="submit"]:hover,
 	input[type="submit"]:active,
 	input[type="submit"]:focus,
 	input[type="submit"].is-active {
-		box-shadow: inset 0 0 0 20rem rgba(248, 249, 249, 0.3);
-		transition-duration: 0.25s;
+		background-color: #002c60;
+		color: #fff;
+		transition-duration: 0.3s;
+		transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+	}
+
+	.gv-search-clear,
+	input[type="reset"] {
+		color: inherit;
+		background-color: rgba(233, 233, 233, 0.5);
+	}
+
+
+	input[type="reset"]:hover,
+	.gv-search-clear:hover {
+		background-color: rgba(233, 233, 233, 0.9);
+		transition-duration: 0.3s;
 		transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 	}
 

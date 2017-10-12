@@ -227,27 +227,28 @@
 	min-height: 100px;
 }
 
+#content .gv-search-clear,
 #content button,
 #content input[type="button"],
 #content input[type="reset"],
 #content input[type="submit"] {
 	color: inherit;
 	background-color: #e7b20e;
-	transition-duration: 0.16s;
+	transition-duration: 0.2s;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-property: all;
-	padding: 0.5em 0.75em;
 	line-height: 1.5;
 	border-width: 0;
 	border-radius: 0.1rem;
-	font-size: inherit;
+	font-size: 0.9rem;
+	font-weight: 500;
+	padding: 0.75em 1.75em;
 	font-family: inherit;
 	display: inline-block;
 	margin: 0;
 	word-break: normal;
 	vertical-align: middle;
 	cursor: pointer;
-	box-shadow: none;
 }
 
 #content button:hover,
@@ -258,16 +259,26 @@
 #content input[type="button"]:active,
 #content input[type="button"]:focus,
 #content input[type="button"].is-active,
-#content input[type="reset"]:hover,
-#content input[type="reset"]:active,
-#content input[type="reset"]:focus,
-#content input[type="reset"].is-active,
 #content input[type="submit"]:hover,
 #content input[type="submit"]:active,
 #content input[type="submit"]:focus,
 #content input[type="submit"].is-active {
-	box-shadow: inset 0 0 0 20rem rgba(248, 249, 249, 0.3);
-	transition-duration: 0.25s;
+	background-color: #002c60;
+	color: #fff;
+	transition-duration: 0.3s;
+	transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+#content .gv-search-clear,
+#content input[type="reset"] {
+	color: inherit;
+	background-color: rgba(233, 233, 233, 0.5);
+}
+
+#content input[type="reset"]:hover,
+#content .gv-search-clear:hover {
+	background-color: rgba(233, 233, 233, 0.9);
+	transition-duration: 0.3s;
 	transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 

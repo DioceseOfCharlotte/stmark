@@ -1,3 +1,6 @@
+#### 1.3.4 / 2017-10-11
+* more form styles.
+
 #### 1.3.3 / 2017-10-10
 * migrate styles from customizer CSS.
 
