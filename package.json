@@ -1,8 +1,8 @@
 {
-  "name": "Abraham",
+  "name": "stmark",
   "version": "1.0.0",
-  "description": "Starter Theme focused on OOCSS and such.",
-  "repository": "https://github.com/m-e-h/abraham",
+  "description": "St Mark School WP child theme.",
+  "repository": "https://github.com/DioceseOfCharlotte/stmark",
   "private": true,
   "license": "GNU General Public License v2 or later",
   "scripts": {
