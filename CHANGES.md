@@ -1,3 +1,8 @@
+# Change Log
+
+#### 1.3.5 / 2017-10-13
+* add minified stylesheet.
+
 #### 1.3.4 / 2017-10-11
 * more form styles.
 
