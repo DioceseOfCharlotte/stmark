@@ -308,3 +308,7 @@ input[type="submit"]:focus, */
 	background-color: #e8ecf0;
 	border-color: #b0c0cd;
 }
+
+body:not(.logged-in) .fusion-mobile-nav-item:last-of-type:not([data-classes]) {
+	display: none;
+}
