@@ -1,5 +1,8 @@
 # Change Log
 
+#### 1.3.8 / 2017-10-16
+* add wide page template.
+
 #### 1.3.7 / 2017-10-16
 * autoprefix style.css.
 
