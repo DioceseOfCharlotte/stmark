@@ -1,5 +1,8 @@
 # Change Log
 
+#### 1.3.6 / 2017-10-15
+* fix enqueuing minified css.
+
 #### 1.3.5 / 2017-10-13
 * add minified stylesheet.
 
