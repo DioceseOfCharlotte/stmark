@@ -80,10 +80,6 @@ ul.gravityview-az-filter {
 	float: right;
 }
 
-.gv-no-results {
-	display: none;
-}
-
 .home-event-image > .wp-post-image {
 	-o-object-fit: cover;
 	object-fit: cover;
