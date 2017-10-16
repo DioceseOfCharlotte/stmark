@@ -9,9 +9,8 @@
 	line-height: 1.6;
 }
 
-.smcs-form {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
-	padding: 1.5rem 0;
+.smcs-post p:empty {
+	display: none;
 }
 
 #content table {

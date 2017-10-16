@@ -1,5 +1,8 @@
 # Change Log
 
+#### 1.3.7 / 2017-10-16
+* autoprefix style.css.
+
 #### 1.3.6 / 2017-10-15
 * fix enqueuing minified css.
 
