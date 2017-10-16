@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: SMCS Form
+ * Template Name: SMCS Form Wide
  * Template Post Type: post, page, gravityview, registration_pages, smcs_athletics
  * A template for a basic page with forms.
  *
