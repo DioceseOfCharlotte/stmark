@@ -303,3 +303,7 @@ input[type="submit"]:focus,
 body:not(.logged-in) .fusion-mobile-nav-item:last-of-type:not([data-classes]) {
 	display: none;
 }
+
+#notification-area {
+	z-index: 99999;
+}
