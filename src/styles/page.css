@@ -17,3 +17,24 @@
 .smcs-post p:empty {
 	display: none;
 }
+
+.s-grade {
+	display: none;
+}
+
+.sm-student .s-grade {
+	display: block;
+}
+
+.p-publish {
+	margin-top: 1rem;
+}
+
+.gv-container .gv-list-view.gv-no-results {
+	display: none;
+}
+
+h3.group-name {
+	margin-bottom: 1.5rem;
+	margin-top: 1rem;
+}
