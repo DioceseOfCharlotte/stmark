@@ -364,6 +364,16 @@ h3.group-name {
 	max-width: 100%;
 }
 
+.alert.has-action {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 #content h1,
 #content h2,
 #content h3,

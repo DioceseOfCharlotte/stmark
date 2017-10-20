@@ -7,3 +7,4 @@
 *.map
 *.lock
 vendor
+package-lock.json
