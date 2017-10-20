@@ -1,5 +1,8 @@
 # Change Log
 
+#### 1.4.0 / 2017-10-20
+* alert styles.
+
 #### 1.3.8 / 2017-10-16
 * add wide page template.
 
