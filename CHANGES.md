@@ -1,5 +1,8 @@
 # Change Log
 
+#### 1.4.1 / 2017-10-22
+* add cache-busting to the form CSS.
+
 #### 1.4.0 / 2017-10-20
 * alert styles.
 

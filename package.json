@@ -1,6 +1,6 @@
 {
   "name": "stmark",
-  "version": "1.0.0",
+  "version": "1.4.1",
   "description": "St Mark School WP child theme.",
   "repository": "https://github.com/DioceseOfCharlotte/stmark",
   "private": true,
@@ -10,7 +10,7 @@
     "build": "postcss src/styles/index.css > css/sm-forms.css && npm run prefix && npm run format",
     "prefix": "postcss css/sm-forms.css -u autoprefixer -o css/sm-forms.css --no-map",
     "prefixStyle": "postcss style.css -u autoprefixer -o style.css --no-map",
-    "minify": "postcss css/sm-forms.css -u cssnano -o css/sm-forms.min.css --no-map",
+    "minify": "postcss css/sm-forms.css -u cssnano -o css/sm-forms$npm_package_version.css --no-map",
     "minifyStyle": "postcss style.css -u cssnano -o style.min.css --no-map",
     "lint": "stylelint css/sm-forms.css",
     "fix": "stylelint css/sm-forms.css --fix",

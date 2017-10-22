@@ -4,3 +4,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 }
+
+.gv-list-view.gv-no-results.gv-no-results {
+	display: none;
+}
