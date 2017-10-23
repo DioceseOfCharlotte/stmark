@@ -213,7 +213,6 @@
 		background-color: rgba(233, 233, 233, 0.5);
 	}
 
-
 	input[type="reset"]:hover,
 	.gv-search-clear:hover {
 		background-color: rgba(233, 233, 233, 0.9);
@@ -255,7 +254,8 @@
 		margin-top: 0.25rem !important;
 	}
 }
-/* #content*/
+
+/* #content */
 
 /* GF Address */
 @media (--md) {

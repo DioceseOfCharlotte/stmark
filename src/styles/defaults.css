@@ -39,7 +39,8 @@ $root-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Lib
 $display-font-family: "Liberation Serif", "Times", "Times New Roman", serif;
 $min-font-size: 0.95rem;
 $max-font-size: 1.125rem;
-/*$form-element-background-color: $color-frost-4;*/
+
+/* $form-element-background-color: $color-frost-4; */
 $form-element-min-height: 2.5rem;
 $monospace-font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 $paragraph-width: 64rem;

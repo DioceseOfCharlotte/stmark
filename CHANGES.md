@@ -1,5 +1,8 @@
 # Change Log
 
+#### 1.4.2 / 2017-10-23
+* add some utility styles.
+
 #### 1.4.1 / 2017-10-22
 * add cache-busting to the form CSS.
 
