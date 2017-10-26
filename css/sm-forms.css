@@ -428,6 +428,14 @@ h3.group-name {
 	display: none;
 }
 
+.add-parent-text {
+	margin-top: 0.5rem;
+	color: #868e96;
+	font-style: italic;
+	font-size: 0.9rem;
+	max-width: 100%;
+}
+
 .u-text-center {
 	text-align: center;
 }

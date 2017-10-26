@@ -1,5 +1,8 @@
 # Change Log
 
+#### 1.4.3 / 2017-10-25
+* another shot at consolidating styles.
+
 #### 1.4.2 / 2017-10-23
 * add some utility styles.
 

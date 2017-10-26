@@ -8,3 +8,15 @@
 .gv-list-view.gv-no-results.gv-no-results {
 	display: none;
 }
+
+.add-parent-text {
+	margin-top: 0.5rem;
+	color: #868e96;
+	font-style: italic;
+	font-size: 0.9rem;
+	max-width: 100%;
+}
+
+/* .sm-card {
+	flex: 0;
+} */

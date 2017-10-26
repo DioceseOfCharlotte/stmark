@@ -39,11 +39,11 @@ function smcs_post_classes( $classes, $class, $post_id ) {
  */
 function sm_get_asset_rev( $filename ) {
 
-	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
-		return $filename;
-	}
+	// if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
+	// 	return $filename;
+	// }
 
-	$version = 'version';
+	$version = 'cssVersion';
 
 	// Cache the decoded manifest so that we only read it in once.
 	static $manifest = null;
@@ -54,7 +54,7 @@ function sm_get_asset_rev( $filename ) {
 
 	// If the manifest contains the requested file, return the hashed name.
 	if ( array_key_exists( $version, $manifest ) ) {
-		return $filename . $manifest[ $version ];
+		return $filename . '-' . $manifest[ $version ];
 	}
 
 	// File hash wasn't found.
