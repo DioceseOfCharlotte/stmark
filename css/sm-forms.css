@@ -436,6 +436,27 @@ h3.group-name {
 	max-width: 100%;
 }
 
+input:disabled,
+input[readonly],
+select:disabled,
+textarea:disabled,
+textarea[readonly],
+input[readonly]:focus,
+textarea[readonly]:focus {
+	pointer-events: none;
+	outline: none;
+	border-color: transparent !important;
+	background-color: rgba(248, 249, 249, 0.9) !important;
+	cursor: default;
+	opacity: 0.8;
+}
+
+#content .gform_wrapper .field_description_below .gfield_description {
+	padding-top: 0.25rem;
+	font-size: 0.825rem !important;
+	color: #868e96 !important;
+}
+
 .u-text-center {
 	text-align: center;
 }

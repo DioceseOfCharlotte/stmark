@@ -5,7 +5,7 @@
   "repository": "https://github.com/DioceseOfCharlotte/stmark",
   "private": true,
   "license": "GNU General Public License v2 or later",
-  "cssVersion": "143",
+  "cssVersion": "144",
   "scripts": {
     "dist": "npm run build && npm run minify && npm run prefixStyle && npm run minifyStyle && npm run fixStyle",
     "build": "postcss src/styles/index.css > css/sm-forms.css && npm run prefix && npm run format",

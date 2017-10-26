@@ -47,7 +47,7 @@ TODO         text
 *.woff2 binary
 
 ## DO NOT EXPORT
-package.json    	export-ignore
+## package.json    	export-ignore
 *.map          		export-ignore
 gulpfile.js    		export-ignore
 .git                export-ignore
