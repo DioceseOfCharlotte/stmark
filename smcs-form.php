@@ -7,7 +7,6 @@
  * @package Avada
  * @subpackage Templates
  */
-
 ?>
 
 <?php

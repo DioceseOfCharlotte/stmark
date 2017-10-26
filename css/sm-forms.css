@@ -9,6 +9,10 @@
 	line-height: 1.6;
 }
 
+#content .smcs-post label {
+	font-weight: 400;
+}
+
 .smcs-post p:empty {
 	display: none;
 }
@@ -32,6 +36,56 @@
 h3.group-name {
 	margin-bottom: 1.5rem;
 	margin-top: 1rem;
+}
+
+#notification-area {
+	z-index: 99999;
+}
+
+.p-publish {
+	margin-top: 1rem;
+	color: #868e96;
+	font-style: italic;
+}
+
+#notification-area.orange {
+	background: #f5c65d;
+	box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+	margin: 0.75rem;
+	border-radius: 2px;
+	width: calc(100% - 1.5rem);
+	color: #222;
+	top: 20vh;
+}
+
+@media (min-width: 40rem) {
+	#notification-area.orange {
+		max-width: 600px;
+		min-width: 300px;
+		left: calc(50% - 300px);
+		top: 30vh;
+	}
+}
+
+#notification-area h3,
+#notification-area p {
+	//padding:0 1.5rem;
+}
+
+#notice-content {
+	margin: 0;
+	padding: 1.5rem;
+}
+
+#remove-notice {
+	//margin:0.25rem 0.5rem;
+	transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+	margin-top: -1rem;
+	margin-right: -1rem;
+}
+
+#remove-notice:hover {
+	opacity: 0.8;
 }
 
 #content table {
@@ -212,10 +266,10 @@ h3.group-name {
 	color: inherit;
 	vertical-align: baseline;
 	font-size: inherit;
-	font-family: inherit;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
 	font-style: inherit;
 	font-weight: inherit;
-	border-color: rgba(0, 0, 0, 0.15);
+	border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 #content button:focus,
@@ -237,7 +291,7 @@ h3.group-name {
 #content [type="week"]:focus,
 #content select:focus,
 #content textarea:focus {
-	border-color: #f6efdc;
+	border-color: #f4c367;
 }
 
 #content textarea {
@@ -364,6 +418,24 @@ h3.group-name {
 	max-width: 100%;
 }
 
+.smcs-form {
+	max-width: 1170px;
+	margin: 0 auto;
+	float: none !important;
+	margin: 0 auto 2.5rem;
+}
+
+.smcs-content {
+	max-width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.smcs-form-wide,
+.smcs-content.smcs-content-wide {
+	max-width: 100%;
+}
+
 #content h1,
 #content h2,
 #content h3,
@@ -457,6 +529,92 @@ textarea[readonly]:focus {
 	color: #868e96 !important;
 }
 
+.gv-list-view.gv-list-view {
+	border-width: 0;
+	margin-bottom: 1em;
+	width: 100%;
+	max-width: calc(50% - 1rem);
+	display: inline-block;
+	vertical-align: top;
+}
+
+.single-gravityview .gv-list-view.gv-list-view {
+	max-width: 100%;
+	display: block;
+}
+
+.smcs-content-view-cards .gv-list-view.gv-list-view {
+	max-width: calc(50% - 1rem);
+	display: inline-block;
+}
+
+.gravityview-template-smcs-form-wide #main .fusion-row {
+	max-width: 100%;
+}
+
+.gv-container img.details-image {
+	max-width: 300px;
+}
+
+#sc_calendar td.calendar-day {
+	background-color: #fff;
+	font-size: 0.825rem;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
+}
+
+#post-1073 .fusion-column-wrapper {
+	padding: 0 !important;
+}
+
+#sc_calendar .calendar-day-head {
+	background-color: #113968 !important;
+	color: #fff;
+	border-color: #113968;
+	border-width: 0;
+	padding: 0.5rem 4px !important;
+}
+
+#sc_event_select select {
+	margin: 0.5rem 0.5rem 0.75rem;
+}
+
+#sc_events_calendar_head {
+	background: none;
+	border: none;
+	display: -webkit-box;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+#sc_calendar .day-number {
+	font-weight: bolder;
+	color: #002c60;
+}
+
+.single-sc_event #main {
+	background-color: #fff;
+}
+
+.post.sc_event .rich-snippet-hidden {
+	display: none;
+}
+
+.post.sc_event {
+	max-width: 900px;
+	margin: 3rem auto;
+	line-height: 1.6;
+}
+
+.sc_event_details {
+	margin: 0 0 1rem;
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bolder;
+	color: #002c60;
+}
+
 .u-text-center {
 	text-align: center;
 }
@@ -495,6 +653,13 @@ textarea[readonly]:focus {
 	justify-content: space-around;
 	margin-bottom: 1rem;
 	padding: 1rem;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.u-flex-jb {
+	-webkit-box-pack: justify;
+	justify-content: space-between;
 }
 
 .sm-card {
@@ -540,12 +705,6 @@ p:last-child {
 
 .gv-container .gv-list-view.gv-no-results {
 	display: none;
-}
-
-.smcs-post .post-content {
-	max-width: 60rem;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .sm-narrow {

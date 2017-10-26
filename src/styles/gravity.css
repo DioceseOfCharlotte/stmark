@@ -37,3 +37,30 @@ textarea[readonly]:focus {
 	font-size: .825rem!important;
 	color: #868e96!important;
 }
+
+.gv-list-view.gv-list-view {
+	border-width: 0;
+	margin-bottom: 1em;
+	width: 100%;
+	max-width: calc(50% - 1rem);
+	display: inline-block;
+	vertical-align: top;
+}
+
+.single-gravityview .gv-list-view.gv-list-view {
+    max-width: 100%;
+	display: block;
+}
+
+.smcs-content-view-cards .gv-list-view.gv-list-view {
+	max-width: calc(50% - 1rem);
+	display: inline-block;
+}
+
+.gravityview-template-smcs-form-wide #main .fusion-row {
+	max-width: 100%;
+}
+
+.gv-container img.details-image {
+    max-width: 300px;
+}

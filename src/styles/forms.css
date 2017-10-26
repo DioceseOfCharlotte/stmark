@@ -148,13 +148,13 @@
 		color: inherit;
 		vertical-align: baseline;
 		font-size: inherit;
-		font-family: inherit;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
 		font-style: inherit;
 		font-weight: inherit;
-		border-color: rgba(0, 0, 0, 0.15);
+		border: 1px solid rgba(0, 0, 0, 0.15);
 
 		&:focus {
-			border-color: #f6efdc;
+			border-color: #f4c367;
 		}
 	}
 
@@ -283,5 +283,23 @@
 }
 
 .gravityview-template-smcs-form #main > .fusion-row {
+	max-width: 100%;
+}
+
+.smcs-form {
+    max-width: 1170px;
+    margin: 0 auto;
+    float: none !important;
+	margin: 0 auto 2.5rem;
+}
+
+.smcs-content {
+	max-width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.smcs-form-wide,
+.smcs-content.smcs-content-wide {
 	max-width: 100%;
 }

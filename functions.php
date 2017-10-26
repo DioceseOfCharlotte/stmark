@@ -9,13 +9,23 @@ add_action( 'wp_enqueue_scripts', 'stmark_styles' );
 add_filter( 'post_class', 'smcs_post_classes', 10, 3 );
 
 function stmark_styles() {
+	global $post;
+
 	$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
 	wp_enqueue_style( 'child-styles', get_theme_file_uri( "style{$suffix}.css" ), array( 'avada-stylesheet' ) );
 
 	wp_register_style( 'sm-form-styles', get_theme_file_uri( 'css/' . sm_get_asset_rev( 'sm-forms' ) . '.css' ), array( 'child-styles' ) );
 
-	if ( is_singular( array( 'registration_pages', 'smcs_athletics', 'gravityview' ) ) ) {
+	if ( is_singular( array( 'registration_pages', 'smcs_athletics', 'gravityview', 'sc_event' ) ) ) {
+		wp_enqueue_style( 'sm-form-styles' );
+	}
+
+	if(sc_is_calendar_page()) {
+		wp_enqueue_style( 'sm-form-styles' );
+	}
+	$content = isset( $post->post_content ) ? $post->post_content : '';
+	if(sc_is_calendar_page() || is_singular('sc_event') || has_shortcode( $content, 'sc_events_list')) {
 		wp_enqueue_style( 'sm-form-styles' );
 	}
 }

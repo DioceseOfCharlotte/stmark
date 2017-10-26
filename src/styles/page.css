@@ -9,10 +9,9 @@
 	line-height: 1.6;
 }
 
-/* .smcs-form {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
-	padding: 1.5rem 0;
-} */
+#content .smcs-post label {
+    font-weight: 400;
+}
 
 .smcs-post p:empty {
 	display: none;
@@ -37,4 +36,54 @@
 h3.group-name {
 	margin-bottom: 1.5rem;
 	margin-top: 1rem;
+}
+
+#notification-area {
+	z-index: 99999;
+}
+
+.p-publish {
+	margin-top: 1rem;
+	color: #868e96;
+	font-style: italic;
+}
+
+#notification-area.orange {
+	background: #f5c65d;
+	box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+	margin: 0.75rem;
+	border-radius: 2px;
+	width: calc(100% - 1.5rem);
+	color: #222;
+	top: 20vh;
+}
+
+@media (min-width: 40rem) {
+	#notification-area.orange {
+		max-width: 600px;
+		min-width: 300px;
+		left: calc(50% - 300px);
+		top: 30vh;
+	}
+}
+
+#notification-area h3,
+#notification-area p {
+	//padding: 0 1.5rem;
+}
+
+#notice-content {
+	margin: 0;
+	padding: 1.5rem;
+}
+
+#remove-notice {
+	//margin: 0.25rem 0.5rem;
+	transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+	margin-top: -1rem;
+	margin-right: -1rem;
+}
+
+#remove-notice:hover {
+	opacity: 0.8;
 }

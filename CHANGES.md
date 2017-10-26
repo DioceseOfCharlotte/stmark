@@ -1,5 +1,10 @@
 # Change Log
 
+#### 1.4.4 / 2017-10-26
+* add gravityview templates.
+* style calendar.
+* more form styles.
+
 #### 1.4.3 / 2017-10-25
 * another shot at consolidating styles.
 
