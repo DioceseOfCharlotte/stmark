@@ -117,6 +117,29 @@ h3.group-name {
 	background-color: #fff;
 }
 
+#content .smcs-post .fa {
+	font: inherit;
+}
+
+#content .smcs-post .fa::before {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-feature-settings: 'liga';
+	font-feature-settings: 'liga';
+}
+
 #content label {
 	display: inline-block;
 	margin-bottom: 0.5rem;

@@ -4,7 +4,7 @@ Theme URI: https://github.com/DioceseOfCharlotte/stmark
 Author: Marty Helmick
 Author URI: https://github.com/m-e-h
 Description: St Mark School child theme for Avada.
-Version: 1.4.5
+Version: 1.4.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: Avada
@@ -131,14 +131,6 @@ table th {
 
 .logged-in:not(.is-administrator) li.public {
 	display: none;
-}
-
-.gravityview .post-content .fa {
-	font: inherit;
-}
-
-.gravityview .post-content .fa::before {
-	font: normal normal normal 14px/1 FontAwesome;
 }
 
 body:not(.logged-in) .loginout {
