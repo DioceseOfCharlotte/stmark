@@ -579,6 +579,15 @@ textarea[readonly]:focus {
 	max-width: 300px;
 }
 
+.gv-edit-entry-wrapper {
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+.address_line_1 label {
+	width: 100%;
+}
+
 #sc_calendar td.calendar-day {
 	background-color: #fff;
 	font-size: 0.825rem;

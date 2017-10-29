@@ -48,7 +48,7 @@ textarea[readonly]:focus {
 }
 
 .single-gravityview .gv-list-view.gv-list-view {
-    max-width: 100%;
+	max-width: 100%;
 	display: block;
 }
 
@@ -62,5 +62,14 @@ textarea[readonly]:focus {
 }
 
 .gv-container img.details-image {
-    max-width: 300px;
+	max-width: 300px;
+}
+
+.gv-edit-entry-wrapper {
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+.address_line_1 label {
+	width: 100%;
 }
