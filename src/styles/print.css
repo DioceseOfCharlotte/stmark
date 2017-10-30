@@ -1,0 +1,68 @@
+@media print {
+	#wrapper {
+		*,
+		*::before,
+		*::after {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif !important;
+			font-size: 12pt;
+			line-height: 1.3 !important;
+			background: transparent;
+			color: #000 !important;
+			box-shadow: none !important;
+			text-shadow: none !important;
+			border: none;
+		}
+
+		article,
+		body,
+		main,
+		table,
+		tr {
+			display: block;
+			margin: 0;
+		}
+
+		> *:not(#main) {
+			display: none;
+		}
+
+		main {
+			background-color: #fff;
+		}
+
+		thead {
+			display: table-header-group;
+		}
+
+		tr,
+		img {
+			page-break-inside: avoid;
+		}
+
+		td {
+			display: inline-block;
+		}
+
+		p,
+		h2,
+		h3 {
+			orphans: 3;
+			widows: 3;
+		}
+
+		h2,
+		h3 {
+			page-break-after: avoid;
+		}
+
+		strong {
+			/* font-family: Georgia, "Times New Roman", Times, serif !important; */
+			color: #616161 !important;
+			font-size: 13pt !important;
+		}
+
+		.gv-back-link {
+			display: none;
+		}
+	}
+}

@@ -793,3 +793,69 @@ p:last-child {
 body.gravityview-template-smcs-form .post-content {
 	max-width: 100%;
 }
+
+@media print {
+	#wrapper *,
+	#wrapper *::before,
+	#wrapper *::after {
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif !important;
+		font-size: 12pt;
+		line-height: 1.3 !important;
+		background: transparent;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+		border: none;
+	}
+
+	#wrapper article,
+	#wrapper body,
+	#wrapper main,
+	#wrapper table,
+	#wrapper tr {
+		display: block;
+		margin: 0;
+	}
+
+	#wrapper > *:not(#main) {
+		display: none;
+	}
+
+	#wrapper main {
+		background-color: #fff;
+	}
+
+	#wrapper thead {
+		display: table-header-group;
+	}
+
+	#wrapper tr,
+	#wrapper img {
+		page-break-inside: avoid;
+	}
+
+	#wrapper td {
+		display: inline-block;
+	}
+
+	#wrapper p,
+	#wrapper h2,
+	#wrapper h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	#wrapper h2,
+	#wrapper h3 {
+		page-break-after: avoid;
+	}
+
+	#wrapper strong {
+		color: #616161 !important;
+		font-size: 13pt !important;
+	}
+
+	#wrapper .gv-back-link {
+		display: none;
+	}
+}
