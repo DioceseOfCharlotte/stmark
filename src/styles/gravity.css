@@ -34,8 +34,8 @@ textarea[readonly]:focus {
 
 #content .gform_wrapper .field_description_below .gfield_description {
 	padding-top: 0.25rem;
-	font-size: .825rem!important;
-	color: #868e96!important;
+	font-size: 0.825rem !important;
+	color: #868e96 !important;
 }
 
 .gv-list-view.gv-list-view {
@@ -72,4 +72,12 @@ textarea[readonly]:focus {
 
 .address_line_1 label {
 	width: 100%;
+}
+
+.gv-list-view .gv-list-view-footer {
+	background-color: transparent;
+}
+
+img.details-image {
+	max-width: 277px;
 }

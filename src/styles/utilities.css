@@ -10,6 +10,18 @@
 	width: 50%;
 }
 
+.u-mb {
+	margin-bottom: 1.5rem;
+}
+
+.u-color-muted {
+	color: #868e96;
+}
+
+.u-text-normal {
+	font-size: 1rem;
+}
+
 .u-inline-block {
 	display: inline-block;
 }

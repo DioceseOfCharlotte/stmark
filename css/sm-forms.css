@@ -588,6 +588,14 @@ textarea[readonly]:focus {
 	width: 100%;
 }
 
+.gv-list-view .gv-list-view-footer {
+	background-color: transparent;
+}
+
+img.details-image {
+	max-width: 277px;
+}
+
 #sc_calendar td.calendar-day {
 	background-color: #fff;
 	font-size: 0.825rem;
@@ -657,6 +665,18 @@ textarea[readonly]:focus {
 
 .u-1of2 {
 	width: 50%;
+}
+
+.u-mb {
+	margin-bottom: 1.5rem;
+}
+
+.u-color-muted {
+	color: #868e96;
+}
+
+.u-text-normal {
+	font-size: 1rem;
 }
 
 .u-inline-block {
@@ -795,17 +815,46 @@ body.gravityview-template-smcs-form .post-content {
 }
 
 @media print {
-	#wrapper *,
-	#wrapper *::before,
-	#wrapper *::after {
+	:root {
+		background-color: #fff;
+	}
+
+	:root *,
+	:root *::before,
+	:root *::after {
 		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif !important;
 		font-size: 12pt;
-		line-height: 1.3 !important;
-		background: transparent;
+		line-height: 1.5 !important;
+		background: transparent !important;
 		color: #000 !important;
 		box-shadow: none !important;
 		text-shadow: none !important;
 		border: none;
+	}
+
+	#wrapper * {
+		font-size: inherit;
+	}
+
+	#wrapper h1,
+	#wrapper h2 {
+		font-size: 15pt;
+		margin-top: 0.5rem;
+		margin-bottom: 0.25rem;
+	}
+
+	#wrapper h3,
+	#wrapper h4 {
+		font-size: 14pt;
+		margin-top: 0.5rem;
+		margin-bottom: 0.25rem;
+	}
+
+	#wrapper h5,
+	#wrapper h6 {
+		font-size: 13pt;
+		margin-top: 0.5rem;
+		margin-bottom: 0.25rem;
 	}
 
 	#wrapper article,
@@ -821,7 +870,7 @@ body.gravityview-template-smcs-form .post-content {
 		display: none;
 	}
 
-	#wrapper main {
+	#wrapper #main {
 		background-color: #fff;
 	}
 
@@ -856,6 +905,10 @@ body.gravityview-template-smcs-form .post-content {
 	}
 
 	#wrapper .gv-back-link {
+		display: none;
+	}
+
+	#wrapper .no-print {
 		display: none;
 	}
 }

@@ -1,16 +1,45 @@
 @media print {
-	#wrapper {
+	:root {
+		background-color: #fff;
+
 		*,
 		*::before,
 		*::after {
 			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif !important;
 			font-size: 12pt;
-			line-height: 1.3 !important;
-			background: transparent;
+			line-height: 1.5 !important;
+			background: transparent !important;
 			color: #000 !important;
 			box-shadow: none !important;
 			text-shadow: none !important;
 			border: none;
+		}
+	}
+
+	#wrapper {
+		* {
+			font-size: inherit;
+		}
+
+		h1,
+		h2 {
+			font-size: 15pt;
+			margin-top: 0.5rem;
+			margin-bottom: 0.25rem;
+		}
+
+		h3,
+		h4 {
+			font-size: 14pt;
+			margin-top: 0.5rem;
+			margin-bottom: 0.25rem;
+		}
+
+		h5,
+		h6 {
+			font-size: 13pt;
+			margin-top: 0.5rem;
+			margin-bottom: 0.25rem;
 		}
 
 		article,
@@ -26,7 +55,7 @@
 			display: none;
 		}
 
-		main {
+		#main {
 			background-color: #fff;
 		}
 
@@ -62,6 +91,10 @@
 		}
 
 		.gv-back-link {
+			display: none;
+		}
+
+		.no-print {
 			display: none;
 		}
 	}
