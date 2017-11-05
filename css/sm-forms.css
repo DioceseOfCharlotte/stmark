@@ -527,7 +527,7 @@ h3.group-name {
 	margin-top: 0.5rem;
 	color: #868e96;
 	font-style: italic;
-	font-size: 0.9rem;
+	font-size: 0.875rem;
 	max-width: 100%;
 }
 
@@ -548,13 +548,13 @@ textarea[readonly]:focus {
 
 #content .gform_wrapper .field_description_below .gfield_description {
 	padding-top: 0.25rem;
-	font-size: 0.825rem !important;
+	font-size: 0.875rem !important;
 	color: #868e96 !important;
 }
 
 .gv-list-view.gv-list-view {
 	border-width: 0;
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 	width: 100%;
 	max-width: calc(50% - 1rem);
 	display: inline-block;
@@ -564,15 +564,6 @@ textarea[readonly]:focus {
 .single-gravityview .gv-list-view.gv-list-view {
 	max-width: 100%;
 	display: block;
-}
-
-.smcs-content-view-cards .gv-list-view.gv-list-view {
-	max-width: calc(50% - 1rem);
-	display: inline-block;
-}
-
-.gravityview-template-smcs-form-wide #main .fusion-row {
-	max-width: 100%;
 }
 
 .gv-container img.details-image {
@@ -596,10 +587,29 @@ img.details-image {
 	max-width: 277px;
 }
 
+.gv-search-box-links a,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+	height: auto;
+	line-height: 1.3;
+	padding: 0.5rem 1rem;
+}
+
+.gv-list-view-content p:last-child {
+	margin-bottom: 0;
+}
+
 #sc_calendar td.calendar-day {
 	background-color: #fff;
 	font-size: 0.825rem;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
+}
+
+@media (min-width: 40rem) {
+	#sc_calendar td div.sc_day_div {
+		min-height: 109px;
+	}
 }
 
 #post-1073 .fusion-column-wrapper {
@@ -653,6 +663,31 @@ img.details-image {
 	font-size: 1.25rem;
 	font-weight: bolder;
 	color: #002c60;
+}
+
+.smcs-view-cards .smcs-post {
+	background-color: transparent;
+}
+
+.smcs-view-cards .gv-grid.gv-widgets-header,
+.smcs-view-cards .gv-widgets-footer {
+	background-color: rgba(255, 255, 255, 0.85);
+	padding: 1.5rem;
+	border-radius: 2px;
+	margin-bottom: 1.5rem;
+}
+
+.smcs-view-cards .smcs-content-view-cards .gv-list-view.gv-list-view {
+	max-width: calc(50% - 1.5rem);
+	display: inline-block;
+	background-color: white;
+	margin: 0 0.5rem 1rem;
+	border-radius: 2px;
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.gravityview-template-smcs-form-wide #main .fusion-row {
+	max-width: 100%;
 }
 
 .u-text-center {
@@ -714,13 +749,15 @@ img.details-image {
 	justify-content: space-between;
 }
 
-.sm-card {
+.sm-card,
+.u-card {
 	padding: 1rem 1.5rem;
 	margin-bottom: 1.5rem;
 	min-width: 25%;
 	border-radius: 2px;
 }
 
+.u-shadow,
 .sm-shadow {
 	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
@@ -793,7 +830,7 @@ p:last-child {
 }
 
 .smcs-post .alert-info {
-	color: #004085;
+	color: #002c60;
 	background-color: #fff;
 	padding-left: 1.5rem;
 }
@@ -802,12 +839,12 @@ p:last-child {
 .alert small {
 	color: #868e96;
 	font-style: normal;
-	font-size: 0.8rem;
+	font-size: 0.875rem;
 }
 
 .gv-field-40-edit_link {
 	text-align: right;
-	font-size: 0.9rem;
+	font-size: 0.875rem;
 }
 
 body.gravityview-template-smcs-form .post-content {

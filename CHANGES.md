@@ -1,5 +1,8 @@
 # Change Log
 
+#### 1.4.8 / 2017-11-5
+* view template styles.
+
 #### 1.4.7 / 2017-11-1
 * print styles.
 

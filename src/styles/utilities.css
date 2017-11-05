@@ -15,7 +15,7 @@
 }
 
 .u-color-muted {
-	color: #868e96;
+	color: $color-muted;
 }
 
 .u-text-normal {
@@ -54,15 +54,17 @@
 	justify-content: space-between;
 }
 
-.sm-card {
+.sm-card,
+.u-card {
 	padding: 1rem 1.5rem;
 	margin-bottom: 1.5rem;
 	min-width: 25%;
 	border-radius: 2px;
 }
 
+.u-shadow,
 .sm-shadow {
-	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: $shadow-1;
 }
 
 .sm-bg-white {
@@ -137,21 +139,21 @@ p:last-child {
 }
 
 .smcs-post .alert-info {
-	color: #004085;
+	color: $color-info;
 	background-color: #fff;
 	padding-left: 1.5rem;
 }
 
 .alert .subtext,
 .alert small {
-	color: #868e96;
+	color: $color-muted;
 	font-style: normal;
-	font-size: 0.8rem;
+	font-size: $h6;
 }
 
 .gv-field-40-edit_link {
 	text-align: right;
-	font-size: 0.9rem;
+	font-size: $h6;
 }
 
 body.gravityview-template-smcs-form .post-content {

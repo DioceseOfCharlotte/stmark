@@ -12,18 +12,21 @@ $mq-md: 40rem;
 $mq-lg: 64rem;
 $mq-xl: 90rem;
 
-$color-info: #31708f;
-$color-success: #3c763d;
-$color-warning: #8a6d3b;
-$bg-info: #d9edf7;
-$bg-success: #dff0d8;
-$bg-warning: #fcf8e3;
-$color-1: #002a60;
-$color-1-light: #003982;
-$color-1-dark: #001b3e;
-$color-2: #fec231;
-$color-2-light: #fedb86;
-$color-2-dark: #d99a01;
+$color-1: #002c60;
+$color-1-light: #5e7a9b;
+$color-1-dark: #002248;
+$color-2: #f5c65d;
+$color-2-light: #f8db9b;
+$color-2-dark: #c29c49;
+$color-3: #0b9279;
+$color-3-light: #4daf9c;
+$color-3-dark: #08735d;
+
+$color-muted: #868e96;
+
+$color-info: $color-1;
+$color-success: $color-3-dark;
+$color-warning: $color-2-dark;
 
 /* Box Shadows */
 $shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);

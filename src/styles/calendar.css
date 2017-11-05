@@ -4,6 +4,12 @@
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
 }
 
+@media (min-width: 40rem) {
+	#sc_calendar td div.sc_day_div {
+		min-height: 109px;
+	}
+}
+
 #post-1073 .fusion-column-wrapper {
 	padding: 0 !important;
 }
