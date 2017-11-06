@@ -88,6 +88,66 @@ h3.group-name {
 	opacity: 0.8;
 }
 
+.u-bold {
+	font-weight: bolder;
+}
+
+.u-italic {
+	font-style: italic;
+}
+
+.smcs-view-cards .smcs-content-view-cards .gv-list-view.gv-list-view {
+	min-width: 200px;
+}
+
+@media (max-width: 40rem) {
+	.smcs-view-cards .smcs-content-view-cards .gv-list-view.gv-list-view {
+		max-width: 100%;
+	}
+
+	.smcs-post {
+		padding: 0;
+	}
+}
+
+#notification-area {
+	z-index: 99999;
+}
+
+#notification-area.orange {
+	background: #f5c65d;
+	box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+	margin: 0.75rem;
+	border-radius: 2px;
+	width: calc(100% - 1.5rem);
+	color: #222;
+	top: 20vh;
+}
+
+@media (min-width: 40rem) {
+	#notification-area.orange {
+		max-width: 600px;
+		min-width: 300px;
+		left: calc(50% - 300px);
+		top: 30vh;
+	}
+}
+
+#notice-content {
+	margin: 0;
+	padding: 1.5rem;
+}
+
+#remove-notice {
+	transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+	margin-top: -1rem;
+	margin-right: -1rem;
+}
+
+#remove-notice:hover {
+	opacity: 0.8;
+}
+
 #content table {
 	border-collapse: collapse;
 	width: 100%;
@@ -600,18 +660,25 @@ input[type=submit] {
 	margin-bottom: 0;
 }
 
-.sm-student {
+.sm-student-list-item {
 	display: -webkit-box;
 	display: flex;
 	flex-wrap: wrap;
+	padding: 0.25rem 0;
+	border-bottom: 1px solid #ddd;
 }
 
-.sm-student .sm-firstname {
+.sm-student-list-item.sm-student-list-item:last-child {
+	margin-bottom: 0.5rem;
+}
+
+.sm-student-list-item .sm-firstname {
 	margin-right: 0.25rem;
 }
 
-.sm-student span.sm-grade {
+.sm-student-list-item span.sm-grade {
 	margin-left: auto;
+	color: #868e96;
 }
 
 #sc_calendar td.calendar-day {
@@ -726,6 +793,7 @@ input[type=submit] {
 
 .u-text-normal {
 	font-size: 1rem;
+	font-weight: normal;
 }
 
 .u-inline-block {
@@ -754,6 +822,20 @@ input[type=submit] {
 	justify-content: space-around;
 	margin-bottom: 1rem;
 	padding: 1rem;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.u-flex {
+	display: -webkit-box;
+	display: flex;
+}
+
+.u-flex-wrap {
+	flex-wrap: wrap;
+}
+
+.u-flex-center {
 	-webkit-box-align: center;
 	align-items: center;
 }

@@ -20,6 +20,7 @@
 
 .u-text-normal {
 	font-size: 1rem;
+	font-weight: normal;
 }
 
 .u-inline-block {
@@ -47,6 +48,18 @@
 	justify-content: space-around;
 	margin-bottom: 1rem;
 	padding: 1rem;
+	align-items: center;
+}
+
+.u-flex {
+	display: flex;
+}
+
+.u-flex-wrap {
+	flex-wrap: wrap;
+}
+
+.u-flex-center {
 	align-items: center;
 }
 

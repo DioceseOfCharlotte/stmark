@@ -1,5 +1,8 @@
 # Change Log
 
+#### 1.4.9 / 2017-11-6
+* styles for directory.
+
 #### 1.4.8 / 2017-11-5
 * view template styles.
 
