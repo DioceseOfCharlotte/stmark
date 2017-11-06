@@ -78,11 +78,25 @@ img.details-image {
 input[type=button],
 input[type=reset],
 input[type=submit] {
-    height: auto;
-    line-height: 1.3;
-    padding: 0.5rem 1rem;
+	height: auto;
+	line-height: 1.3;
+	padding: 0.5rem 1rem;
 }
 
 .gv-list-view-content p:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
+}
+
+
+.sm-student {
+	display: flex;
+	flex-wrap: wrap;
+
+	.sm-firstname {
+		margin-right: .25rem;
+	}
+
+	span.sm-grade {
+		margin-left: auto;
+	}
 }

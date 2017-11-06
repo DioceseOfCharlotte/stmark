@@ -600,6 +600,20 @@ input[type=submit] {
 	margin-bottom: 0;
 }
 
+.sm-student {
+	display: -webkit-box;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sm-student .sm-firstname {
+	margin-right: 0.25rem;
+}
+
+.sm-student span.sm-grade {
+	margin-left: auto;
+}
+
 #sc_calendar td.calendar-day {
 	background-color: #fff;
 	font-size: 0.825rem;
