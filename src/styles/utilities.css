@@ -18,6 +18,10 @@
 	color: $color-muted;
 }
 
+.u-text-system {
+	font-family: $root-font-family;
+}
+
 .u-text-normal {
 	font-size: 1rem;
 	font-weight: normal;
@@ -171,4 +175,8 @@ p:last-child {
 
 body.gravityview-template-smcs-form .post-content {
 	max-width: 100%;
+}
+
+.u-text-small {
+	font-size: $h6;
 }

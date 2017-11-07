@@ -660,16 +660,20 @@ input[type=submit] {
 	margin-bottom: 0;
 }
 
+.gv-list-view-content > .gv-list-view-content-description {
+	width: 100%;
+	padding: 0;
+}
+
 .sm-student-list-item {
 	display: -webkit-box;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0.25rem 0;
-	border-bottom: 1px solid #ddd;
 }
 
-.sm-student-list-item.sm-student-list-item:last-child {
-	margin-bottom: 0.5rem;
+.sm-student-list-item + .sm-student-list-item {
+	border-top: 1px solid #ddd;
 }
 
 .sm-student-list-item .sm-firstname {
@@ -679,6 +683,7 @@ input[type=submit] {
 .sm-student-list-item span.sm-grade {
 	margin-left: auto;
 	color: #868e96;
+	font-size: 1.1rem;
 }
 
 #sc_calendar td.calendar-day {
@@ -789,6 +794,10 @@ input[type=submit] {
 
 .u-color-muted {
 	color: #868e96;
+}
+
+.u-text-system {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Liberation Sans", sans-serif;
 }
 
 .u-text-normal {
@@ -945,6 +954,10 @@ p:last-child {
 
 body.gravityview-template-smcs-form .post-content {
 	max-width: 100%;
+}
+
+.u-text-small {
+	font-size: 0.875rem;
 }
 
 @media print {
